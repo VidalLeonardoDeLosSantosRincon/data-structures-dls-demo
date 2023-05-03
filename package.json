@@ -1,0 +1,23 @@
+{
+  "name": "data-structures-dls",
+  "version": "1.0.0",
+  "description": "Typescript/Javascript Data Structures",
+  "main": "dist/node/index.js",
+  "browser": "dist/browser/index.js",
+  "homepage": "https://github.com/VidalLeonardoDeLosSantosRincon/data-structures-dls",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VidalLeonardoDeLosSantosRincon/data-structures-dls"
+  },
+  "scripts": {
+    "build-node": "tsc src/index.ts --outDir dist/node",
+    "build-browser": "tsc src/index.ts --outDir dist/browser --module ES6",
+    "build": "npm run build-node & npm run build-browser"
+  },
+  "keywords": ["data structures"],
+  "author": "Vidal DLS <vidalsantos0118@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "5.0.4"
+  }
+}
